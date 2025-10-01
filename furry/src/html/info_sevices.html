@@ -5,13 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/furry/src/css/style.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .main-content {
+            flex: 1;
+            background-color: #F3E8BE;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 100px;
+            padding-top: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        
+        footer {
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 100px;
+            margin-top: auto;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="info_header">
-            <img src="/src/img/main/logo.svg" alt="" style="padding: 10px 0px 0px 40px" />
+            <img src="/furry/src/img/main/logo.svg" alt="" style="padding: 10px 0px 0px 40px" />
             <div class="navigate_menu" style="display: flex; margin: 10px 0px 0px 40px">
                 <a href="">
                     <p>Главная</p>
@@ -25,7 +57,8 @@
             </div>
         </div>
     </header>
-    <div style="background-color: #F3E8BE; display: flex; justify-content: center; padding-bottom: 100px;padding-top: 20px;padding-left: 50px; padding-right: 50px;">
+    
+    <div class="main-content">
         <div class="text_info_services" style="width: 700px;">
             <h1><b>Вакцинация собаки</b></h1>
             <p>Вакцинация собак — важная и необходимая процедура для защиты вашего питомца от опасных инфекционных
@@ -37,25 +70,21 @@
                 прививок и ответят на все вопросы, чтобы процедура прошла максимально комфортно и эффективно для вашего
                 любимца. Заботьтесь о здоровье своей собаки — своевременная вакцинация — залог ее долгой и счастливой
                 жизни!</p>
-            <button style="/* Rectangle 56 */
-
-box-sizing: border-box;
-
-
-width: 286px;
-height: 83px;
-
-
-background: #F5CB88;
-border: 1px solid #000000;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 41.5px;
-font-size: 28px;
-">Запись</button>
+            <button style="
+                box-sizing: border-box;
+                width: 286px;
+                height: 83px;
+                background: #F5CB88;
+                border: 1px solid #000000;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 41.5px;
+                font-size: 28px;
+            ">Запись</button>
         </div>
-        <img src="/src/img/main/вакцинация.svg" alt="">
+        <img src="/furry/src/img/main/вакцинация.svg" alt="">
     </div>
-    <footer style="background-color: black; color: white; width: 100%;height: 100px;">
+    
+    <footer>
         <p style="margin: 0; text-align: center; padding: 50px;">© 2025 Ветеринарная клиника . Все права защищены.</p>
     </footer>
 </body>
